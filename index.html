@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topbar with Color Picker & Hero Carousel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&family=Parisienne&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Lenis Smooth Scroll -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@latest/bundled/lenis.min.css">
+
+    <!-- AOS - Animate On Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="./styles.css">
+ 
+</head>
+
+<body>
+    <!-- Topbar -->
+    <div class="topbar" id="topbar">
+        <div class="logo">
+            <p>Pommel</p>
+
+            <p><span>&</span> Cantle</p>
+        </div>
+
+        <nav class="nav-left">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+
+        </nav>
+
+        <nav class="nav-right">
+               <a href="./products.html" class="nav-link">Products</a>
+            <a href="#contact" class="nav-link">Contact</a>
+
+        </nav>
+
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger-menu" id="hamburgerBtn" aria-label="Toggle menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </div>
+
+    <!-- Mobile Menu Backdrop -->
+    <div class="mobile-menu-backdrop" id="mobileMenuBackdrop"></div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <nav class="mobile-nav">
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="./products.html" class="mobile-nav-link">Products</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Color Picker -->
+    <!-- <div class="color-picker-container">
+        <label class="color-picker-label">Topbar Color</label>
+        <div class="color-input-wrapper">
+            <input type="color" id="colorPicker" value="#4a1818">
+            <span class="color-value" id="colorValue">#4a1818</span>
+        </div>
+    </div> -->
+
+    <!-- Hero Carousel -->
+    <div class="hero-carousel">
+        <div class="carousel-slide slide-1 active">
+            <div class="slide-content">
+                <h1>Welcome to Innovation</h1>
+                <p>Discover cutting-edge solutions that transform your business</p>
+                <a class="hero btn-pill">Get Started</a>
+            </div>
+        </div>
+
+        <div class="carousel-slide slide-2">
+            <div class="slide-content">
+                <h1>Empower Your Vision</h1>
+                <p>Tools and resources designed for success</p>
+                <a class=" hero  btn-pill">Learn More</a>
+            </div>
+        </div>
+
+        <div class="carousel-slide slide-3">
+            <div class="slide-content">
+                <h1>Build Something Amazing</h1>
+                <p>Join thousands of satisfied customers worldwide</p>
+                <a class=" hero  btn-pill">Start Free Trial</a>
+            </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+         <!-- data-aos="fade-right" data-aos-duration="800" data-aos-delay="500" -->
+        <button class="carousel-arrow left" id="prevBtn" >‹</button>
+        <button class="carousel-arrow right" id="nextBtn" >›</button>
+
+        <!-- Navigation Dots -->
+         <!-- data-aos="fade-up" data-aos-duration="800" data-aos-delay="600" -->
+        <div class="carousel-nav" >
+            <span class="nav-dot active" data-slide="0"></span>
+            <span class="nav-dot" data-slide="1"></span>
+            <span class="nav-dot" data-slide="2"></span>
+        </div>
+    </div>
+
+    <!-- 2nd Section -->
+
+    <section class="main-second-section">
+        <h2 class="heading-h2" data-aos="fade-up" data-aos-duration="1000">Crafted With Precision.</br> Built to Last.</h2>
+        <p class="tagline" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Every saddle, sheet, and leather piece is shaped by <br>master hands, echoing centuries of
+            equestrian tradition.</p>
+        <div class="cards">
+            <article class="card" aria-labelledby="card-title-1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <!-- Replace the image URL with your actual image path. Use high-res, crop for center. -->
+                <div class="card__visual" role="img" aria-label="Close-up of handcrafted saddle stitching"
+                    style="background-image: url('https://i.pinimg.com/1200x/83/d0/a4/83d0a4de4fdd2f724d6939421b6d117f.jpg');">
+                </div>
+
+                <div class="card__panel">
+                    <div class="card__eyebrow" aria-hidden="true">Premium Saddles</div>
+
+                    <h3 id="card-title-1" class="card__title">Hand-stitched. Horse-tested.</h3>
+
+                    <p class="card__desc">
+                        Precision-stitched leather seats built to be comfortable, durable, and heirloom-ready.
+                    </p>
+
+                    <div class="card__cta-row">
+                        <a href="#saddles" class="btn-pill" role="button">Explore Saddles</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card" aria-labelledby="card-title-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+    <div class="card__visual"
+        role="img"
+        aria-label="Rolled premium leather sheets"
+        style="background-image: url('https://i.pinimg.com/1200x/42/49/7b/42497b3a812514558110a05febcc3cef.jpg');">
+    </div>
+
+    <div class="card__panel">
+        <div class="card__eyebrow" aria-hidden="true">Leather Sheets</div>
+
+        <h3 id="card-title-2" class="card__title">For Artisans Who Refuse Compromise</h3>
+
+        <p class="card__desc">
+            High-grade leather sheets crafted with consistent grain and strength for every demanding project.
+        </p>
+
+        <div class="card__cta-row">
+            <a href="#leather-sheets" class="btn-pill" role="button">View Sheets</a>
+        </div>
+    </div>
+</article>
+<article class="card" aria-labelledby="card-title-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+    <div class="card__visual"
+        role="img"
+        aria-label="Craftsman hand-tooling custom leather goods"
+        style="background-image: url('https://i.pinimg.com/1200x/58/11/29/581129205be7281c1c31913b9a1b55b0.jpg');">
+    </div>
+
+    <div class="card__panel">
+        <div class="card__eyebrow" aria-hidden="true">Custom Leather Goods</div>
+
+        <h3 id="card-title-3" class="card__title">From Vision to Heirloom</h3>
+
+        <p class="card__desc">
+            Bespoke belts, holsters, cases, and accessories handcrafted to match your exact design.
+        </p>
+
+        <div class="card__cta-row">
+            <a href="#custom" class="btn-pill" role="button">See Custom Work</a>
+        </div>
+    </div>
+</article>
+
+
+        </div>
+    </section>
+
+    <!-- About Us / Our Story Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-header" data-aos="fade-up" data-aos-duration="1000">
+                <span class="section-label">Our Story</span>
+                <h2 class="section-title">Leather Craftsmanship<br>Since 1847</h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <p class="about-intro">
+                        For over 175 years, Pommel & Cantle has been synonymous with uncompromising quality and timeless craftsmanship. What began in a small workshop in the English countryside has grown into a legacy trusted by equestrians and artisans worldwide.
+                    </p>
+                    <p class="about-body">
+                        Every piece we create tells a story—of skilled hands, premium materials, and an unwavering commitment to excellence. Our master craftsmen use techniques passed down through generations, combined with modern precision, to create leather goods that aren't just products, but heirlooms.
+                    </p>
+                    <p class="about-body">
+                        We believe in slow craft, sustainable practices, and the kind of quality that improves with age. Each saddle, sheet, and accessory is meticulously inspected to meet our exacting standards before it earns the Pommel & Cantle name.
+                    </p>
+                </div>
+
+                <div class="about-image" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1578632292335-df3abbb0d586?w=800&q=80" alt="Craftsman working on leather">
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-values" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <div class="value-item">
+                    <h3>Heritage</h3>
+                    <p>175+ years of unbroken craftsmanship tradition</p>
+                </div>
+                <div class="value-item">
+                    <h3>Quality</h3>
+                    <p>Only the finest full-grain leather makes the cut</p>
+                </div>
+                <div class="value-item">
+                    <h3>Sustainability</h3>
+                    <p>Ethical sourcing and zero-waste practices</p>
+                </div>
+                <div class="value-item">
+                    <h3>Legacy</h3>
+                    <p>Built to last generations, not seasons</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <div class="contact-header" data-aos="fade-up" data-aos-duration="1000">
+                <span class="section-label">Get in Touch</span>
+                <h2 class="section-title">Let's Create<br>Something Exceptional</h2>
+                <p class="contact-subtitle">Whether you're commissioning a custom piece or have questions about our work, we'd love to hear from you.</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="info-block">
+                        <h3>Workshop</h3>
+                        <p>
+                            Pommel & Cantle Ltd.<br>
+                            42 Harness Lane<br>
+                            Somerset, BA3 4QR<br>
+                            United Kingdom
+                        </p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>Contact</h3>
+                        <p>
+                            <a href="tel:+441234567890">+44 (0) 1234 567 890</a><br>
+                            <a href="mailto:hello@pommelandcantle.co.uk">hello@pommelandcantle.co.uk</a>
+                        </p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>Hours</h3>
+                        <p>
+                            Monday – Friday: 9:00 – 17:00<br>
+                            Saturday: 10:00 – 14:00<br>
+                            Sunday: Closed
+                        </p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#" aria-label="Instagram">Instagram</a>
+                            <a href="#" aria-label="Facebook">Facebook</a>
+                            <a href="#" aria-label="Pinterest">Pinterest</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Footer content can be added here -->
+         <!-- data-aos="fade-up" data-aos-duration="1000" -->
+        <p class="footer-punchline" >Trusted by Riders, Craftsmen, and Leather Purists Worldwide</p>
+    </footer>
+
+        <!-- AOS - Animate On Scroll JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- Lenis Smooth Scroll JS -->
+        <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@latest/bundled/lenis.min.js"></script>
+        <script src="./script.js"></script>
+</body>
+
+</html>
