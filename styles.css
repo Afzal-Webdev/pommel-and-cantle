@@ -468,7 +468,7 @@
         .main-second-section .heading-h2 {
             color: #F5DEB3;
             text-align: center;
-            padding: 2rem;
+            padding: 6rem 2rem 3rem;
             font-size: 3rem;
             position: relative;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -633,6 +633,7 @@
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             border: 1px solid rgba(255, 255, 255, 0.2);
+            flex: 1;
         }
 
         .premium-card:hover {
@@ -646,6 +647,7 @@
             background-size: cover;
             background-position: center;
             overflow: hidden;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .premium-card-overlay {
@@ -944,6 +946,19 @@
             }
         }
 
+        /* Premium Cards - Stack on Tablets */
+        @media (max-width: 1024px) {
+            .premium-cards-grid {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+                padding-inline: 2rem;
+            }
+
+            .premium-card-image {
+                height: 380px;
+            }
+        }
+
         /* Responsive - Medium Screens (992px to 1280px) */
         @media (min-width: 993px) and (max-width: 1280px) {
             /* Topbar adjustments */
@@ -1020,7 +1035,7 @@
             .main-second-section .cards {
                 gap: 1.5vw;
                 padding-inline: 2.5rem;
-                padding-block: 2.5rem 1.75rem;
+                padding-block: 3rem 6rem;
             }
 
             /* Card adjustments */
