@@ -10,6 +10,13 @@
             --card-radius: 18px;
             --card-width: 320px;
             --gutter: 20px;
+
+            /* Font Family Variables */
+            --font-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            --font-poppins: 'Poppins', sans-serif;
+            --font-great-vibes: 'Great Vibes', cursive;
+            --font-merriweather: "Merriweather", Georgia, serif;
+            --font-monospace: 'Courier New', monospace;
         }
 
         * {
@@ -19,7 +26,7 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: var(--font-system);
             overflow-x: hidden;
         }
 
@@ -55,13 +62,13 @@
           .nav-left{
             margin-left: auto;
             padding-right: 8dvw;
-            font-family: 'Poppins', sans-serif;
+            font-family: var(--font-poppins);
           }
 
           .nav-right{
             margin-right: auto;
                padding-left: 8dvw;
-            font-family: 'Poppins', sans-serif;
+            font-family: var(--font-poppins);
           }
 
 
@@ -160,7 +167,7 @@
             text-decoration: none;
             font-size: 1.8rem;
             font-weight: 500;
-            font-family: 'Poppins', sans-serif;
+            font-family: var(--font-poppins);
             padding: 1rem 0;
             border-bottom: 1px solid rgba(245, 245, 220, 0.2);
             transition: all 0.3s ease;
@@ -209,10 +216,11 @@
             background:  var(--earth-600);
             color: white;
             transform: translateY(-2px);
+            border: 1px solid #FFF8DC;
         }
 
         .logo {
-            font-family: 'Great Vibes', cursive;
+            font-family: var(--font-great-vibes);
             font-size: 2.2rem;
             font-weight: 400;
             color:  #F5F5DC;
@@ -274,7 +282,7 @@
         }
 
         .color-value {
-            font-family: 'Courier New', monospace;
+            font-family: var(--font-monospace);
             font-size: 0.9rem;
             color: #666;
             padding: 0.5rem;
@@ -533,7 +541,7 @@
 
         .card__title {
             margin: 0;
-            font-family: "Merriweather", Georgia, serif;
+            font-family: var(--font-merriweather);
             font-size: 22px;
             line-height: 1.05;
             color: #3a2f2a;
@@ -680,6 +688,353 @@
             to {
                 opacity: 1;
                 transform: translateY(0);
+            }
+        }
+
+        /* Responsive - Medium Screens (992px to 1280px) */
+        @media (min-width: 993px) and (max-width: 1280px) {
+            /* Topbar adjustments */
+            .topbar {
+                padding: 0.875rem 1.5rem;
+                height: 5.5rem;
+            }
+
+            .nav-left {
+                padding-right: 5dvw;
+            }
+
+            .nav-right {
+                padding-left: 5dvw;
+            }
+
+            .nav-link {
+                font-size: 1rem;
+                padding: 0.4rem 0.875rem;
+            }
+
+            .logo {
+                font-size: 2rem;
+            }
+
+            .logo p {
+                font-size: 2rem;
+            }
+
+            .logo-ampersand {
+                font-size: 1.3rem;
+            }
+
+            /* Hero Carousel adjustments */
+            .hero-carousel {
+                height: calc(100dvh - 5.5rem);
+            }
+
+            .slide-content h1 {
+                font-size: 3rem;
+                margin-bottom: 0.875rem;
+            }
+
+            .slide-content p {
+                font-size: 1.2rem;
+                margin-bottom: 1.75rem;
+            }
+
+            .carousel-arrow {
+                width: 45px;
+                height: 45px;
+                font-size: 1.4rem;
+            }
+
+            .carousel-arrow.left {
+                left: 25px;
+            }
+
+            .carousel-arrow.right {
+                right: 25px;
+            }
+
+            /* Main Second Section adjustments */
+            .main-second-section .heading-h2 {
+                font-size: 2.5rem;
+                padding: 1.75rem;
+            }
+
+            .main-second-section .tagline {
+                font-size: 1.75rem;
+                padding: 0 1.75rem;
+            }
+
+            .main-second-section .cards {
+                gap: 1.5vw;
+                padding-inline: 2.5rem;
+                padding-block: 2.5rem 1.75rem;
+            }
+
+            /* Card adjustments */
+            .card {
+                width: 300px;
+            }
+
+            .card__visual {
+                height: 200px;
+            }
+
+            .card__panel {
+                padding: 18px;
+                gap: 10px;
+            }
+
+            .card__eyebrow {
+                font-size: 12px;
+            }
+
+            .card__title {
+                font-size: 20px;
+            }
+
+            .card__desc {
+                font-size: 13px;
+                height: 56px;
+            }
+
+            .btn-pill {
+                padding: 9px 16px;
+                font-size: 13px;
+            }
+
+            .btn-pill.hero {
+                font-size: 1rem;
+                padding: 0.875rem 2.2rem;
+            }
+
+            /* Footer adjustments */
+            footer .footer-punchline {
+                font-size: 1.1rem;
+                padding: 0.875rem;
+            }
+
+            /* Products Hero Section adjustments */
+            .products-hero {
+                padding: 3.5rem 1.75rem;
+                min-height: calc(95dvh - 70px);
+            }
+
+            .products-hero-content h1 {
+                font-size: 4.2rem;
+                margin-bottom: 1.3rem;
+            }
+
+            .hero-badge {
+                padding: 0.55rem 1.6rem;
+                font-size: 0.7rem;
+                letter-spacing: 2.5px;
+                margin-bottom: 1.75rem;
+            }
+
+            .hero-description {
+                font-size: 1.2rem;
+                line-height: 1.7;
+                margin-bottom: 2.5rem;
+            }
+
+            .hero-subtext {
+                font-size: 0.95rem;
+            }
+
+            .hero-stats {
+                gap: 2.5rem;
+                margin-bottom: 2.5rem;
+                padding: 1.75rem;
+                border-radius: 18px;
+            }
+
+            .stat-number {
+                font-size: 2.2rem;
+            }
+
+            .stat-label {
+                font-size: 0.8rem;
+            }
+
+            .hero-cta {
+                padding: 1.2rem 2.7rem;
+                font-size: 1rem;
+            }
+
+            /* Premium Products Section adjustments */
+            .premium-products {
+                padding: 5.5rem 1.75rem;
+            }
+
+            .products-container {
+                max-width: 1200px;
+                gap: 7rem;
+            }
+
+            .product-showcase {
+                gap: 3.5rem;
+                padding: 2.5rem;
+                border-radius: 22px;
+            }
+
+            .product-image-wrapper {
+                height: 450px;
+                border-radius: 14px;
+            }
+
+            .product-details {
+                padding: 1.75rem;
+            }
+
+            .product-category {
+                font-size: 0.85rem;
+                letter-spacing: 2.5px;
+                margin-bottom: 0.4rem;
+            }
+
+            .product-title {
+                font-size: 2.7rem;
+                margin-bottom: 0.4rem;
+            }
+
+            .product-tagline {
+                font-size: 1rem;
+                margin-bottom: 1.75rem;
+            }
+
+            .product-specs {
+                gap: 1.3rem;
+                margin-bottom: 1.75rem;
+                padding: 1.75rem;
+                border-radius: 11px;
+            }
+
+            .spec-label {
+                font-size: 0.7rem;
+                letter-spacing: 1.3px;
+            }
+
+            .spec-value {
+                font-size: 0.95rem;
+            }
+
+            .product-description {
+                margin-bottom: 2.2rem;
+                line-height: 1.75;
+            }
+
+            .product-description p {
+                font-size: 1rem;
+            }
+
+            .product-cta {
+                gap: 0.875rem;
+            }
+
+            .btn-premium,
+            .btn-secondary {
+                padding: 0.875rem 2.2rem;
+                font-size: 0.95rem;
+                border-radius: 45px;
+            }
+
+            .product-badge {
+                padding: 0.45rem 1.3rem;
+                font-size: 0.7rem;
+                letter-spacing: 1.8px;
+            }
+
+            /* About Section adjustments */
+            .about-section {
+                padding: 5rem 1.75rem;
+            }
+
+            .about-header {
+                margin-bottom: 5.5rem;
+            }
+
+            .section-label {
+                font-size: 1.8rem;
+                letter-spacing: 2.5px;
+                margin-bottom: 1.3rem;
+            }
+
+            .section-title {
+                font-size: 3.5rem;
+            }
+
+            .about-content {
+                gap: 5rem;
+                margin-bottom: 5.5rem;
+            }
+
+            .about-intro {
+                font-size: 1.4rem;
+                line-height: 1.65;
+                margin-bottom: 1.75rem;
+            }
+
+            .about-body {
+                font-size: 1rem;
+                line-height: 1.75;
+                margin-bottom: 1.3rem;
+            }
+
+            .about-values {
+                gap: 2.5rem;
+                padding-top: 3.5rem;
+            }
+
+            .value-item h3 {
+                font-size: 1.05rem;
+                margin-bottom: 0.65rem;
+            }
+
+            .value-item p {
+                font-size: 0.9rem;
+                line-height: 1.55;
+            }
+
+            /* Contact Section adjustments */
+            .contact-section {
+                padding: 7rem 1.75rem;
+            }
+
+            .contact-header {
+                margin-bottom: 5.5rem;
+            }
+
+            .contact-subtitle {
+                font-size: 1.1rem;
+                line-height: 1.65;
+                margin-top: 1.3rem;
+            }
+
+            .contact-content {
+                max-width: 800px;
+            }
+
+            .contact-info {
+                gap: 3.5rem 5rem;
+            }
+
+            .info-block h3 {
+                font-size: 0.8rem;
+                letter-spacing: 1.8px;
+                margin-bottom: 0.875rem;
+            }
+
+            .info-block p {
+                font-size: 0.95rem;
+                line-height: 1.75;
+            }
+
+            .social-links {
+                gap: 1.3rem;
+            }
+
+            .social-links a {
+                font-size: 0.9rem;
             }
         }
 
@@ -830,7 +1185,7 @@
     font-weight: 700;
     letter-spacing: 3px;
     margin-bottom: 2rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
     text-transform: uppercase;
 }
 
@@ -839,7 +1194,7 @@
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 1.5rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
     text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -855,7 +1210,7 @@
     font-size: 1.3rem;
     line-height: 1.8;
     margin-bottom: 3rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
     font-weight: 400;
 }
 
@@ -890,14 +1245,14 @@
 .stat-number {
     font-size: 2.5rem;
     font-weight: 700;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
     line-height: 1;
 }
 
 .stat-label {
     font-size: 0.85rem;
     opacity: 0.9;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -919,7 +1274,7 @@
     font-weight: 700;
     border-radius: 50px;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
     transition: all 0.4s ease;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
@@ -1014,7 +1369,7 @@
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 2px;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -1029,7 +1384,7 @@
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-bottom: 0.5rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
 }
 
 .product-title {
@@ -1038,7 +1393,7 @@
     color: #2c1810;
     margin-bottom: 0.5rem;
     line-height: 1.1;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
 }
 
 .product-tagline {
@@ -1071,14 +1426,14 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
 }
 
 .spec-value {
     font-size: 1rem;
     color: #2c1810;
     font-weight: 600;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
 }
 
 .product-description {
@@ -1109,7 +1464,7 @@
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 8px 20px rgba(140, 75, 58, 0.3);
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
     letter-spacing: 0.5px;
 }
 
@@ -1130,7 +1485,7 @@
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
 }
 
 .btn-secondary:hover {
@@ -1287,7 +1642,7 @@
     text-transform: uppercase;
     color: #6B3C2F;
     margin-bottom: 1.5rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
 }
 
 .section-title {
@@ -1296,7 +1651,7 @@
     line-height: 1.1;
     color: #4A3428;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
     letter-spacing: -1px;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
@@ -1319,7 +1674,7 @@
     color: #5C3D2E;
     margin-bottom: 2rem;
     font-weight: 400;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
 }
 
 .about-body {
@@ -1327,7 +1682,7 @@
     line-height: 1.8;
     color: #6B4423;
     margin-bottom: 1.5rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
     font-weight: 300;
 }
 
@@ -1370,7 +1725,7 @@
     font-weight: 600;
     color: #6B3C2F;
     margin-bottom: 0.75rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
     letter-spacing: 0.5px;
 }
 
@@ -1378,7 +1733,7 @@
     font-size: 0.95rem;
     line-height: 1.6;
     color: #6B4423;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
     font-weight: 300;
 }
 
@@ -1434,7 +1789,7 @@
     line-height: 1.7;
     color: #FAEBD7;
     margin-top: 1.5rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
     font-weight: 300;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
@@ -1458,14 +1813,14 @@
     text-transform: uppercase;
     color: #F5DEB3;
     margin-bottom: 1rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
 }
 
 .info-block p {
     font-size: 1rem;
     line-height: 1.8;
     color: #FAEBD7;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
     font-weight: 300;
 }
 
@@ -1494,7 +1849,7 @@
     padding-bottom: 2px;
     border-bottom: 1px solid transparent;
     transition: all 0.3s ease;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
 }
 
 .social-links a:hover {
