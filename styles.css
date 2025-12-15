@@ -62,13 +62,13 @@
 
           .nav-left{
             margin-left: auto;
-            margin-right: 8dvw;
+            margin-right: 8rem;
             font-family: var(--font-cinzel);
           }
 
           .nav-right{
             margin-right: auto;
-               margin-left: 8dvw;
+               margin-left: 8rem;
             font-family: var(--font-cinzel);
           }
 
@@ -452,6 +452,7 @@
             /* height: 100vh; */
             background: #fff8ed;
             position: relative;
+            padding-bottom: 5rem;
         }
 
         /* Subtle overlay for depth */
@@ -880,17 +881,6 @@
             box-shadow: 0 8px 20px rgba(140, 75, 58, 0.3);
         }
 
-        /* responsive: scale down on small screens */
-        @media (max-width:360px) {
-            :root {
-                --card-width: 300px;
-            }
-
-            .card__visual {
-                height: 200px;
-            }
-        }
-
         footer .footer-punchline {
             text-align: center;
             padding: 1rem;
@@ -955,554 +945,6 @@
                 transform: translateY(0);
             }
         }
-
-        /* Premium Cards - Stack on Tablets */
-        @media (max-width: 1024px) {
-            .premium-cards-grid {
-                grid-template-columns: 1fr;
-                gap: 2.5rem;
-                padding-inline: 2rem;
-            }
-
-            .premium-card-image {
-                height: 380px;
-            }
-        }
-
-        /* Responsive - Medium Screens (992px to 1280px) */
-        @media (min-width: 993px) and (max-width: 1280px) {
-            /* Topbar adjustments */
-            .topbar {
-                padding: 0.875rem 1.5rem;
-                height: 5.5rem;
-            }
-
-            .nav-left {
-                margin-right: 8dvw;
-            }
-
-            .nav-right {
-                margin-left: 8dvw;
-            }
-
-            .nav-link {
-                font-size: 1rem;
-                padding: 0.4rem 0.875rem;
-            }
-
-            .logo {
-                font-size: 2rem;
-            }
-
-            .logo p {
-                font-size: 2rem;
-            }
-
-            .logo-ampersand {
-                font-size: 1.3rem;
-            }
-
-            /* Hero Carousel adjustments */
-            .hero-carousel {
-                height: calc(100dvh - 5.5rem);
-            }
-
-            .slide-content h1 {
-                font-size: 3rem;
-                margin-bottom: 0.875rem;
-            }
-
-            .slide-content p {
-                font-size: 1.2rem;
-                margin-bottom: 1.75rem;
-            }
-
-            .carousel-arrow {
-                width: 45px;
-                height: 45px;
-                font-size: 1.4rem;
-            }
-
-            .carousel-arrow.left {
-                left: 25px;
-            }
-
-            .carousel-arrow.right {
-                right: 25px;
-            }
-
-            /* Main Second Section adjustments */
-            .main-second-section .heading-h2 {
-                font-size: 2.5rem;
-                /* padding: 1.75rem; */
-            }
-
-            .main-second-section .tagline {
-                font-size: 1.75rem;
-                padding: 0 1.75rem;
-            }
-
-            .main-second-section .cards {
-                gap: 1.5vw;
-                padding-inline: 2.5rem;
-                padding-block: 3rem 6rem;
-            }
-
-            /* Card adjustments */
-            .card {
-                width: 300px;
-            }
-
-            .card__visual {
-                height: 200px;
-            }
-
-            .card__panel {
-                padding: 18px;
-                gap: 10px;
-            }
-
-            .card__eyebrow {
-                font-size: 12px;
-            }
-
-            .card__title {
-                font-size: 20px;
-            }
-
-            .card__desc {
-                font-size: 13px;
-                height: 56px;
-            }
-
-            .btn-pill {
-                padding: 9px 16px;
-                font-size: 13px;
-            }
-
-            .btn-pill.hero {
-                font-size: 1rem;
-                padding: 0.875rem 2.2rem;
-            }
-
-            /* Footer adjustments */
-            footer .footer-punchline {
-                font-size: 1.1rem;
-                padding: 0.875rem;
-            }
-
-            /* Products Hero Section adjustments */
-            .products-hero {
-                padding: 3.5rem 1.75rem;
-                min-height: calc(95dvh - 70px);
-            }
-
-            .products-hero-content h1 {
-                font-size: 4.2rem;
-                margin-bottom: 1.3rem;
-            }
-
-            .hero-badge {
-                padding: 0.55rem 1.6rem;
-                font-size: 0.7rem;
-                letter-spacing: 2.5px;
-                margin-bottom: 1.75rem;
-            }
-
-            .hero-description {
-                font-size: 1.2rem;
-                line-height: 1.7;
-                margin-bottom: 2.5rem;
-            }
-
-            .hero-subtext {
-                font-size: 0.95rem;
-            }
-
-            .hero-stats {
-                gap: 2.5rem;
-                margin-bottom: 2.5rem;
-                padding: 1.75rem;
-                border-radius: 18px;
-            }
-
-            .stat-number {
-                font-size: 2.2rem;
-            }
-
-            .stat-label {
-                font-size: 0.8rem;
-            }
-
-            .hero-cta {
-                padding: 1.2rem 2.7rem;
-                font-size: 1rem;
-            }
-
-            /* Premium Products Section adjustments */
-            .premium-products {
-                padding: 5.5rem 1.75rem;
-            }
-
-            .products-container {
-                max-width: 1200px;
-                gap: 7rem;
-            }
-
-            .product-showcase {
-                gap: 3.5rem;
-                padding: 2.5rem;
-                border-radius: 22px;
-            }
-
-            .product-image-wrapper {
-                height: 450px;
-                border-radius: 14px;
-            }
-
-            .product-details {
-                padding: 1.75rem;
-            }
-
-            .product-category {
-                font-size: 0.85rem;
-                letter-spacing: 2.5px;
-                margin-bottom: 0.4rem;
-            }
-
-            .product-title {
-                font-size: 2.7rem;
-                margin-bottom: 0.4rem;
-            }
-
-            .product-tagline {
-                font-size: 1rem;
-                margin-bottom: 1.75rem;
-            }
-
-            .product-specs {
-                gap: 1.3rem;
-                margin-bottom: 1.75rem;
-                padding: 1.75rem;
-                border-radius: 11px;
-            }
-
-            .spec-label {
-                font-size: 0.7rem;
-                letter-spacing: 1.3px;
-            }
-
-            .spec-value {
-                font-size: 0.95rem;
-            }
-
-            .product-description {
-                margin-bottom: 2.2rem;
-                line-height: 1.75;
-            }
-
-            .product-description p {
-                font-size: 1rem;
-            }
-
-            .product-cta {
-                gap: 0.875rem;
-            }
-
-            .btn-premium,
-            .btn-secondary {
-                padding: 0.875rem 2.2rem;
-                font-size: 0.95rem;
-                border-radius: 45px;
-            }
-
-            .product-badge {
-                padding: 0.45rem 1.3rem;
-                font-size: 0.7rem;
-                letter-spacing: 1.8px;
-            }
-
-            /* About Section adjustments */
-            .about-section {
-                padding: 5rem 1.75rem;
-            }
-
-            .about-header {
-                margin-bottom: 5.5rem;
-            }
-
-            .section-label {
-                font-size: 1.8rem;
-                letter-spacing: 2.5px;
-                margin-bottom: 1.3rem;
-            }
-
-            .section-title {
-                font-size: 3.5rem;
-            }
-
-            .about-content {
-                gap: 5rem;
-                margin-bottom: 5.5rem;
-            }
-
-            .about-intro {
-                font-size: 1.4rem;
-                line-height: 1.65;
-                margin-bottom: 1.75rem;
-            }
-
-            .about-body {
-                font-size: 1rem;
-                line-height: 1.75;
-                margin-bottom: 1.3rem;
-            }
-
-            .about-values {
-                gap: 2.5rem;
-                padding-top: 3.5rem;
-            }
-
-            .value-item h3 {
-                font-size: 1.05rem;
-                margin-bottom: 0.65rem;
-            }
-
-            .value-item p {
-                font-size: 0.9rem;
-                line-height: 1.55;
-            }
-
-            /* Contact Section adjustments */
-            .contact-section {
-                padding: 7rem 1.75rem;
-            }
-
-            .contact-header {
-                margin-bottom: 5.5rem;
-            }
-
-            .contact-subtitle {
-                font-size: 1.1rem;
-                line-height: 1.65;
-                margin-top: 1.3rem;
-            }
-
-            .contact-content {
-                max-width: 800px;
-            }
-
-            .contact-info {
-                gap: 3.5rem 5rem;
-            }
-
-            .info-block h3 {
-                font-size: 0.8rem;
-                letter-spacing: 1.8px;
-                margin-bottom: 0.875rem;
-            }
-
-            .info-block p {
-                font-size: 0.95rem;
-                line-height: 1.75;
-            }
-
-            .social-links {
-                gap: 1.3rem;
-            }
-
-            .social-links a {
-                font-size: 0.9rem;
-            }
-
-            /* Premium Cards - Medium Screens */
-            .premium-cards-grid {
-                gap: 2.5rem;
-                padding-inline: 2.5rem;
-                padding-block: 2.5rem 1.75rem;
-            }
-
-            .premium-card-image {
-                height: 320px;
-            }
-
-            .premium-card-content {
-                padding: 2.2rem;
-            }
-
-            .premium-title {
-                font-size: 1.8rem;
-            }
-
-            .premium-subtitle {
-                font-size: 0.95rem;
-            }
-
-            .feature-text strong {
-                font-size: 0.9rem;
-            }
-
-            .feature-text span {
-                font-size: 0.8rem;
-            }
-
-            .spec-chip {
-                font-size: 0.75rem;
-                padding: 0.45rem 1.1rem;
-            }
-
-            .btn-premium-main,
-            .btn-premium-secondary {
-                font-size: 0.9rem;
-                padding: 0.9rem 1.8rem;
-            }
-        }
-
-        /* Responsive - Hamburger Menu Below 992px */
-        @media (max-width: 992px) {
-            .topbar {
-                justify-content: space-between;
-                padding: 1rem 2rem;
-            }
-
-            .logo {
-                position: static;
-                transform: none;
-                order: 1;
-                margin: 0;
-                font-size: 1.8rem;
-            }
-
-            .logo p {
-                font-size: 1.8rem;
-            }
-
-            /* Hide desktop navigation */
-            .nav-left,
-            .nav-right {
-                display: none;
-            }
-
-            /* Show hamburger menu */
-            .hamburger-menu {
-                display: flex;
-                order: 2;
-                margin-left: auto;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .topbar {
-                padding: 1rem 1.5rem;
-            }
-
-            .logo {
-                font-size: 1.6rem;
-            }
-
-            .logo p {
-                font-size: 1.6rem;
-            }
-
-            .logo-ampersand {
-                font-size: 1.1rem;
-            }
-
-            .mobile-menu-overlay {
-                max-width: 100%;
-            }
-
-            .mobile-nav {
-                padding: 6rem 2rem 2rem 2rem;
-            }
-
-            .mobile-nav-link {
-                font-size: 1.5rem;
-            }
-
-            .color-picker-container {
-                top: 70px;
-                right: 10px;
-                padding: 1rem;
-            }
-
-            .hero-carousel {
-                height: 500px;
-            }
-
-            .slide-content h1 {
-                font-size: 2rem;
-            }
-
-            .slide-content p {
-                font-size: 1rem;
-            }
-
-            .carousel-arrow {
-                width: 40px;
-                height: 40px;
-                font-size: 1.2rem;
-            }
-
-            .carousel-arrow.left {
-                left: 10px;
-            }
-
-            .carousel-arrow.right {
-                right: 10px;
-            }
-
-            /* Premium Cards - Mobile */
-            .premium-cards-grid {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-                padding-inline: 1.5rem;
-                padding-block: 2rem 1.5rem;
-            }
-
-            .premium-card-image {
-                height: 280px;
-            }
-
-            .premium-card-content {
-                padding: 1.75rem;
-            }
-
-            .premium-title {
-                font-size: 1.5rem;
-            }
-
-            .premium-subtitle {
-                font-size: 0.9rem;
-            }
-
-            .premium-features {
-                gap: 1rem;
-            }
-
-            .feature-item {
-                padding: 0.875rem;
-            }
-
-            .premium-cta {
-                flex-direction: column;
-            }
-
-            .btn-premium-main,
-            .btn-premium-secondary {
-                width: 100%;
-                padding: 1rem;
-            }
-        }
-
-
-/* ============================================
-   PRODUCTS PAGE STYLES
-   ============================================ */
-
-/* -------------------- PRODUCTS PAGE - HERO SECTION -------------------- */
-/* Premium hero section with gradient background, stats, and CTA */
-
 .products-hero {
     margin-top: 70px;
     position: relative;
@@ -1857,111 +1299,6 @@
 }
 
 
-/* -------------------- PRODUCTS PAGE - RESPONSIVE STYLES -------------------- */
-/* Mobile and tablet optimizations for products page */
-
-/* Hero Section - Responsive */
-@media (max-width: 768px) {
-    .products-hero {
-        min-height: 70vh;
-        padding: 3rem 1.5rem;
-    }
-
-    .products-hero-content h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero-description {
-        font-size: 1.1rem;
-    }
-
-    .hero-stats {
-        flex-direction: column;
-        gap: 1.5rem;
-        padding: 1.5rem;
-    }
-
-    .stat-divider {
-        width: 50px;
-        height: 1px;
-    }
-
-    .stat-number {
-        font-size: 2rem;
-    }
-
-    .hero-cta {
-        padding: 1rem 2rem;
-        font-size: 1rem;
-    }
-}
-
-/* Product Showcases - Tablet */
-@media (max-width: 1024px) {
-    .product-showcase,
-    .product-showcase.reverse {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        padding: 2rem;
-    }
-
-    .product-showcase.reverse .product-image-wrapper,
-    .product-showcase.reverse .product-details {
-        order: unset;
-    }
-
-    .product-image-wrapper {
-        height: 400px;
-    }
-
-    .product-title {
-        font-size: 2.2rem;
-    }
-
-    .product-specs {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-}
-
-/* Product Showcases - Mobile */
-@media (max-width: 768px) {
-    .premium-products {
-        padding: 4rem 1rem;
-    }
-
-    .products-container {
-        gap: 4rem;
-    }
-
-    .product-showcase {
-        padding: 1.5rem;
-    }
-
-    .product-image-wrapper {
-        height: 300px;
-    }
-
-    .product-title {
-        font-size: 1.8rem;
-    }
-
-    .product-tagline {
-        font-size: 1rem;
-    }
-
-    .product-cta {
-        flex-direction: column;
-    }
-
-    .btn-premium,
-    .btn-secondary {
-        width: 100%;
-        text-align: center;
-    }
-}
-
-
 /* ============================================
    ABOUT US / OUR STORY SECTION
    ============================================ */
@@ -2219,15 +1556,171 @@
     border-bottom-color: #FFF8DC;
 }
 
-
 /* ============================================
-   ABOUT & CONTACT SECTIONS - RESPONSIVE
+   RESPONSIVE DESIGN - MEDIA QUERIES
+   Organized by screen size (mobile-first approach)
    ============================================ */
 
-@media (max-width: 1024px) {
+/* ============================================
+   SMALL LAPTOPS & MEDIUM DESKTOPS (1025px - 1440px)
+   ============================================ */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    /* Main Second Section */
+   
+
+    /* Premium Cards - Stack on smaller laptops */
+    .premium-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        padding-inline: 3rem;
+        padding-block: 3rem 2rem;
+    }
+
+    .premium-card-image {
+        height: 400px;
+    }
+}
+
+/* ============================================
+   TABLET LANDSCAPE & SMALL DESKTOP (769px - 1024px)
+   ============================================ */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Topbar */
+    .topbar {
+        padding: 0.875rem 1.5rem;
+        height: 5.5rem;
+    }
+
+    .nav-left {
+        margin-right: 6rem;
+    }
+
+    .nav-right {
+        margin-left: 6rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        padding: 0.4rem 0.875rem;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .logo p {
+        font-size: 2rem;
+    }
+
+    .logo-ampersand {
+        font-size: 1.3rem;
+    }
+
+    /* Hero Carousel */
+    .hero-carousel {
+        height: calc(100dvh - 5.5rem);
+    }
+
+    .slide-content h1 {
+        font-size: 3rem;
+        margin-bottom: 0.875rem;
+    }
+
+    .slide-content p {
+        font-size: 1.2rem;
+        margin-bottom: 1.75rem;
+    }
+
+    .carousel-arrow {
+        width: 45px;
+        height: 45px;
+        font-size: 1.4rem;
+    }
+
+    .carousel-arrow.left {
+        left: 25px;
+    }
+
+    .carousel-arrow.right {
+        right: 25px;
+    }
+
+    /* Main Second Section */
+    .main-second-section .heading-h2 {
+        font-size: 2.5rem;
+    }
+
+    .main-second-section .tagline {
+        font-size: 1.75rem;
+        padding: 0 1.75rem;
+    }
+
+    .main-second-section .cards {
+        flex-direction: column;
+        gap: 2rem;
+        padding-inline: 2.5rem;
+        padding-block: 3rem 2rem;
+    }
+
+    /* Premium Cards */
+    .premium-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        padding-inline: 2.5rem;
+        padding-block: 2.5rem 1.75rem;
+    }
+
+    .premium-card-image {
+        height: 380px;
+    }
+
+    .premium-card-content {
+        padding: 2.2rem;
+    }
+
+    .premium-title {
+        font-size: 1.8rem;
+    }
+
+    .premium-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .feature-text strong {
+        font-size: 0.9rem;
+    }
+
+    .feature-text span {
+        font-size: 0.8rem;
+    }
+
+    .spec-chip {
+        font-size: 0.75rem;
+        padding: 0.45rem 1.1rem;
+    }
+
+    .btn-premium-main,
+    .btn-premium-secondary {
+        font-size: 0.9rem;
+        padding: 0.9rem 1.8rem;
+    }
+
+    /* About Section */
+    .about-section {
+        padding: 5rem 2rem;
+    }
+
     .about-content {
         grid-template-columns: 1fr;
         gap: 4rem;
+    }
+
+    .about-intro {
+        font-size: 1.4rem;
+    }
+
+    .about-body {
+        font-size: 1rem;
     }
 
     .about-values {
@@ -2235,42 +1728,673 @@
         gap: 2rem;
     }
 
+    .section-title {
+        font-size: 3rem;
+    }
+
+    /* Contact Section */
+    .contact-section {
+        padding: 7rem 2rem;
+    }
+
     .contact-info {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
 
-    .section-title {
-        font-size: 3rem;
+    /* Footer */
+    footer .footer-punchline {
+        font-size: 1.1rem;
+        padding: 0.875rem;
     }
 }
 
-@media (max-width: 768px) {
-    .about-section,
-    .contact-section {
-        padding: 5rem 1.5rem;
+/* ============================================
+   MOBILE & TABLET PORTRAIT (481px - 768px)
+   ============================================ */
+@media (min-width: 481px) and (max-width: 768px) {
+    /* Topbar */
+    .topbar {
+        padding: 1rem 1.5rem;
+        justify-content: space-between;
+        height: 5rem;
     }
 
-    .about-header,
-    .contact-header {
-        margin-bottom: 4rem;
+    .logo {
+        position: static;
+        transform: none;
+        order: 1;
+        margin: 0;
+        font-size: 1.6rem;
+    }
+
+    .logo p {
+        font-size: 1.6rem;
+    }
+
+    .logo-ampersand {
+        font-size: 1.1rem;
+    }
+
+    /* Hide desktop navigation */
+    .nav-left,
+    .nav-right {
+        display: none;
+    }
+
+    /* Show hamburger menu */
+    .hamburger-menu {
+        display: flex;
+        order: 2;
+        margin-left: auto;
+    }
+
+    .mobile-menu-overlay {
+        max-width: 100%;
+    }
+
+    .mobile-nav {
+        padding: 6rem 2rem 2rem 2rem;
+    }
+
+    .mobile-nav-link {
+        font-size: 1.5rem;
+    }
+
+    /* Hero Carousel */
+    .hero-carousel {
+        height: calc(100dvh - 5rem);
+    }
+
+    .slide-content {
+        padding: 1.5rem;
+    }
+
+    .slide-content h1 {
+        font-size: 2.2rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .slide-content p {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn-pill.hero {
+        font-size: 1rem;
+        padding: 0.875rem 2rem;
+    }
+
+    .carousel-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .carousel-arrow.left {
+        left: 15px;
+    }
+
+    .carousel-arrow.right {
+        right: 15px;
+    }
+
+    /* Main Second Section */
+    .main-second-section .heading-h2 {
+        font-size: 2rem;
+        padding-block: 3rem 1rem;
+    }
+
+    .main-second-section .tagline {
+        font-size: 1.3rem;
+        padding: 0 1.5rem;
+    }
+
+    .main-second-section .cards {
+        flex-direction: column;
+        padding-inline: 1.5rem;
+        padding-block: 2rem 1.5rem;
+        gap: 3rem;
+    }
+
+    /* Premium Cards */
+    .premium-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding-inline: 1.5rem;
+        padding-block: 2rem 1.5rem;
+    }
+
+    .premium-card-image {
+        height: 280px;
+    }
+
+    .premium-card-content {
+        padding: 1.75rem;
+    }
+
+    .premium-card-header {
+        padding-bottom: 1.25rem;
+    }
+
+    .premium-title {
+        font-size: 1.5rem;
+        height: auto;
+        -webkit-line-clamp: unset;
+    }
+
+    .premium-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .premium-features {
+        gap: 1rem;
+    }
+
+    .feature-item {
+        padding: 0.875rem;
+    }
+
+    .feature-text strong {
+        font-size: 0.85rem;
+    }
+
+    .feature-text span {
+        font-size: 0.75rem;
+    }
+
+    .premium-specs {
+        flex-wrap: wrap;
+    }
+
+    .spec-chip {
+        font-size: 0.7rem;
+        padding: 0.4rem 1rem;
+    }
+
+    .premium-cta {
+        flex-direction: column;
+    }
+
+    .btn-premium-main,
+    .btn-premium-secondary {
+        width: 100%;
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* About Section */
+    .about-section {
+        padding: 4rem 1.5rem;
+    }
+
+    .about-header {
+        margin-bottom: 2.5rem;
+    }
+
+    .section-label {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
     }
 
     .section-title {
         font-size: 2.5rem;
     }
 
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-bottom: 4rem;
+    }
+
     .about-intro {
         font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .about-body {
+        font-size: 0.95rem;
+        margin-bottom: 1.25rem;
     }
 
     .about-values {
         grid-template-columns: 1fr;
         gap: 2rem;
+        padding-top: 3rem;
+    }
+
+    .value-item h3 {
+        font-size: 1rem;
+    }
+
+    .value-item p {
+        font-size: 0.9rem;
+    }
+
+    /* Contact Section */
+    .contact-section {
+        padding: 5rem 1.5rem;
+    }
+
+    .contact-header {
+        margin-bottom: 4rem;
+    }
+
+    .contact-subtitle {
+        font-size: 1rem;
+        margin-top: 1.25rem;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .info-block h3 {
+        font-size: 0.8rem;
+        margin-bottom: 0.875rem;
+    }
+
+    .info-block p {
+        font-size: 0.9rem;
+    }
+
+    .social-links a {
+        font-size: 0.85rem;
+    }
+
+    /* Footer */
+    footer .footer-punchline {
+        font-size: 1rem;
+        padding: 0.875rem;
+    }
+}
+
+/* ============================================
+   MOBILE SMALL (320px - 480px)
+   ============================================ */
+@media (max-width: 480px) {
+    /* Topbar */
+    .topbar {
+        padding: 0.875rem 1rem;
+        height: 4.5rem;
+    }
+
+    .logo {
+        position: static;
+        transform: none;
+        order: 1;
+        margin: 0;
+        font-size: 1.4rem;
+    }
+
+    .logo p {
+        font-size: 1.4rem;
+    }
+
+    .logo-ampersand {
+        font-size: 1rem;
+        margin: -0.2rem 0;
+    }
+
+    /* Hide desktop navigation */
+    .nav-left,
+    .nav-right {
+        display: none;
+    }
+
+    /* Show hamburger menu */
+    .hamburger-menu {
+        display: flex;
+        order: 2;
+        margin-left: auto;
+        width: 26px;
+        height: 20px;
+    }
+
+    .mobile-menu-overlay {
+        max-width: 100%;
+    }
+
+    .mobile-nav {
+        padding: 5rem 1.5rem 2rem 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .mobile-nav-link {
+        font-size: 1.3rem;
+        padding: 0.875rem 0;
+    }
+
+    /* Hero Carousel */
+    .hero-carousel {
+        height: calc(100dvh - 4.5rem);
+    }
+
+    .slide-content {
+        padding: 1rem;
+    }
+
+    .slide-content h1 {
+        font-size: 1.8rem;
+        margin-bottom: 0.625rem;
+    }
+
+    .slide-content p {
+        font-size: 0.95rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .btn-pill.hero {
+        font-size: 0.9rem;
+        padding: 0.75rem 1.75rem;
+    }
+
+    .carousel-arrow {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    .carousel-arrow.left {
+        left: 10px;
+    }
+
+    .carousel-arrow.right {
+        right: 10px;
+    }
+
+    .carousel-nav {
+        bottom: 20px;
+    }
+
+    .nav-dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .nav-dot.active {
+        width: 32px;
+    }
+
+    /* Main Second Section */
+     .main-second-section{
+        padding-bottom: 3rem;
+     }
+    .main-second-section .heading-h2 {
+        font-size: 1.75rem;
+        padding-block: 2.5rem 1rem;
+    }
+
+    .main-second-section .tagline {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+
+    .main-second-section .cards {
+        flex-direction: column;
+        padding-inline: 1rem;
+        padding-block: 2rem 1rem;
+        gap: 3rem;
+    }
+
+    /* Premium Cards */
+    .premium-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+        padding-inline: 1rem;
+        padding-block: 2rem 1rem;
+    }
+
+    .premium-card {
+        border-radius: 20px;
+    }
+
+    .premium-card-image {
+        height: 240px;
+    }
+
+    .premium-card-content {
+        padding: 1.5rem;
+    }
+
+    .premium-card-header {
+        padding-bottom: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .premium-category {
+        font-size: 0.65rem;
+        padding: 0.35rem 0.875rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .premium-badge {
+        top: 15px;
+        right: 15px;
+        padding: 0.5rem 1.25rem;
+        font-size: 0.65rem;
+    }
+
+    .premium-title {
+        font-size: 1.3rem;
+        margin-bottom: 0.4rem;
+        height: auto;
+        -webkit-line-clamp: unset;
+    }
+
+    .premium-subtitle {
+        font-size: 0.85rem;
+    }
+
+    .premium-features {
+        gap: 0.875rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .feature-item {
+        padding: 0.75rem;
+        gap: 0.75rem;
+    }
+
+    .feature-icon {
+        font-size: 1.25rem;
+    }
+
+    .feature-text strong {
+        font-size: 0.8rem;
+    }
+
+    .feature-text span {
+        font-size: 0.7rem;
+    }
+
+    .premium-specs {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .spec-chip {
+        font-size: 0.65rem;
+        padding: 0.375rem 0.875rem;
+    }
+
+    .premium-cta {
+        flex-direction: column;
+        gap: 0.875rem;
+        padding-top: 1.25rem;
+    }
+
+    .btn-premium-main,
+    .btn-premium-secondary {
+        width: 100%;
+        padding: 0.875rem;
+        font-size: 0.85rem;
+    }
+
+    /* About Section */
+    .about-section {
+        padding: 3rem 1rem;
+    }
+
+    .about-header {
+        margin-bottom: 1.5rem;
+    }
+
+    .section-label {
+        font-size: 1.25rem;
+        letter-spacing: 2px;
+        margin-bottom: 0.875rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .about-intro {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 1.25rem;
+    }
+
+    .about-body {
+        font-size: 0.9rem;
+        line-height: 1.7;
+        margin-bottom: 1rem;
+    }
+
+    .about-values {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+        padding-top: 2.5rem;
+    }
+
+    .value-item h3 {
+        font-size: 0.95rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .value-item p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+
+    /* Contact Section */
+    .contact-section {
+        padding: 4rem 1rem;
+    }
+
+    .contact-header {
+        margin-bottom: 3rem;
+    }
+
+    .contact-subtitle {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-top: 1rem;
     }
 
     .contact-info {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    .info-block h3 {
+        font-size: 0.75rem;
+        letter-spacing: 1.5px;
+        margin-bottom: 0.75rem;
+    }
+
+    .info-block p {
+        font-size: 0.85rem;
+        line-height: 1.7;
+    }
+
+    .social-links {
+        gap: 1rem;
+    }
+
+    .social-links a {
+        font-size: 0.8rem;
+    }
+
+    /* Footer */
+    footer .footer-punchline {
+        font-size: 0.9rem;
+        padding: 0.75rem 0.5rem;
+        line-height: 1.4;
+    }
+}
+
+/* ============================================
+   MOBILE EXTRA SMALL (max-width: 360px)
+   ============================================ */
+@media (max-width: 360px) {
+    :root {
+        --card-width: 280px;
+    }
+
+    .topbar {
+        padding: 0.75rem 0.875rem;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .logo p {
+        font-size: 1.3rem;
+    }
+
+    .slide-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .slide-content p {
+        font-size: 0.875rem;
+    }
+
+    .main-second-section .heading-h2 {
+        font-size: 1.5rem;
+    }
+
+    .main-second-section .tagline {
+        font-size: 1rem;
+    }
+
+    .premium-title {
+        font-size: 1.2rem;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+}
+
+/* ============================================
+   LARGE DESKTOP (min-width: 1025px)
+   ============================================ */
+@media (min-width: 1025px) {
+    /* Ensure hamburger menu is hidden on desktop */
+    .hamburger-menu {
+        display: none;
+    }
+
+    .mobile-menu-backdrop,
+    .mobile-menu-overlay {
+        display: none;
+    }
+
+    /* Desktop navigation visible */
+    .nav-left,
+    .nav-right {
+        display: flex;
     }
 }
