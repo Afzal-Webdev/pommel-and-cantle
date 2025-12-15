@@ -12,11 +12,12 @@
             --gutter: 20px;
 
             /* Font Family Variables */
-            --font-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            --font-poppins: 'Poppins', sans-serif;
-            --font-great-vibes: 'Great Vibes', cursive;
-            --font-merriweather: "Merriweather", Georgia, serif;
-            --font-monospace: 'Courier New', monospace;
+            --font-cinzel: 'Cinzel', serif;
+            /* For identity and impact: headings, titles, labels */
+            --font-alegreya: 'Alegreya', serif;
+            /* For body text and storytelling */
+            --font-signature: 'Great Vibes', cursive;
+            /* For logo only */
         }
 
         * {
@@ -26,7 +27,7 @@
         }
 
         body {
-            font-family: var(--font-system);
+            font-family: var(--font-alegreya);
             overflow-x: hidden;
         }
 
@@ -62,13 +63,13 @@
           .nav-left{
             margin-left: auto;
             margin-right: 8dvw;
-            font-family: var(--font-poppins);
+            font-family: var(--font-cinzel);
           }
 
           .nav-right{
             margin-right: auto;
                margin-left: 8dvw;
-            font-family: var(--font-poppins);
+            font-family: var(--font-cinzel);
           }
 
 
@@ -167,7 +168,7 @@
             text-decoration: none;
             font-size: 1.8rem;
             font-weight: 500;
-            font-family: var(--font-poppins);
+            font-family: var(--font-cinzel);
             padding: 1rem 0;
             border-bottom: 1px solid rgba(245, 245, 220, 0.2);
             transition: all 0.3s ease;
@@ -220,7 +221,7 @@
         }
 
         .logo {
-            font-family: var(--font-great-vibes);
+            font-family: var(--font-signature);
             font-size: 2.2rem;
             font-weight: 400;
             color:  #F5F5DC;
@@ -450,6 +451,7 @@
             width: 100%;
             /* height: 100vh; */
             background: linear-gradient(135deg, #6B3C2F 0%, #5C3D2E 50%, #4A3428 100%);
+            /* background: #5a2f21; */
             position: relative;
         }
 
@@ -542,7 +544,7 @@
 
         .card__title {
             margin: 0;
-            font-family: var(--font-merriweather);
+            font-family: var(--font-alegreya);
             font-size: 22px;
             line-height: 1.05;
             color: #3a2f2a;
@@ -628,7 +630,7 @@
 
         .premium-card {
             position: relative;
-            background: rgba(255, 255, 255, 0.95);
+            background: linear-gradient(180deg, #ffffff 0%, #fefefe 100%);;
             border-radius: 24px;
             overflow: hidden;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
@@ -682,7 +684,7 @@
             font-weight: 700;
             letter-spacing: 1.5px;
             text-transform: uppercase;
-            font-family: var(--font-poppins);
+            font-family: var(--font-cinzel);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
             z-index: 10;
         }
@@ -706,7 +708,7 @@
             text-transform: uppercase;
             color: var(--earth-600);
             margin-bottom: 0.75rem;
-            font-family: var(--font-poppins);
+            font-family: var(--font-cinzel);
             background: rgba(140, 75, 58, 0.1);
             padding: 0.4rem 1rem;
             border-radius: 20px;
@@ -718,7 +720,14 @@
             color: #2c1810;
             margin-bottom: 0.5rem;
             line-height: 1.2;
-            font-family: var(--font-poppins);
+            font-family: var(--font-cinzel);
+
+             overflow: hidden;
+    text-overflow: ellipsis; /* Optional, but good practice */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+    height: 77px; /* Adjust based on font-size and line-height */
         }
 
         .premium-subtitle {
@@ -726,7 +735,7 @@
             color: #5a504b;
             font-style: italic;
             font-weight: 400;
-            font-family: var(--font-poppins);
+            font-family: var(--font-cinzel);
         }
 
         .premium-features {
@@ -768,13 +777,13 @@
             font-size: 0.95rem;
             font-weight: 600;
             color: #2c1810;
-            font-family: var(--font-poppins);
+            font-family: var(--font-cinzel);
         }
 
         .feature-text span {
             font-size: 0.85rem;
             color: #5a504b;
-            font-family: var(--font-poppins);
+            font-family: var(--font-cinzel);
         }
 
         .premium-specs {
@@ -793,7 +802,7 @@
             font-size: 0.8rem;
             font-weight: 600;
             color: var(--earth-600);
-            font-family: var(--font-poppins);
+            font-family: var(--font-cinzel);
             transition: all 0.3s ease;
         }
 
@@ -823,7 +832,7 @@
             text-align: center;
             cursor: pointer;
             transition: all 0.3s ease;
-            font-family: var(--font-poppins);
+            font-family: var(--font-cinzel);
             box-shadow: 0 8px 20px rgba(140, 75, 58, 0.3);
             position: relative;
             overflow: hidden;
@@ -862,7 +871,7 @@
             text-align: center;
             cursor: pointer;
             transition: all 0.3s ease;
-            font-family: var(--font-poppins);
+            font-family: var(--font-cinzel);
         }
 
         .btn-premium-secondary:hover {
@@ -888,6 +897,7 @@
             padding: 1rem;
             background-color: #bf947c;
             color: #3c1f0d;
+            font-family: var(--font-cinzel);
             /* color: #fef7ed; */
             font-size: 1.2rem;
         }
