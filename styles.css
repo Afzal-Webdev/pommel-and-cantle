@@ -357,6 +357,7 @@
             margin-bottom: 1rem;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
             animation: fadeInUp 1s ease-out;
+            text-transform: uppercase;
         }
 
         .slide-content p {
@@ -2105,13 +2106,13 @@
     }
 
     .slide-content h1 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         margin-bottom: 0.625rem;
         max-width: 80dvw;
     }
 
     .slide-content p {
-        font-size: 0.95rem;
+        font-size: 1.2rem;
         margin-bottom: 1.25rem;
     }
 
