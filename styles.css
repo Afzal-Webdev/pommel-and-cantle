@@ -32,7 +32,7 @@
         }
 
         /* Topbar Styles */
-        .topbar {
+    .topbar {
             position: fixed;
             top: 0;
             left: 0;
@@ -358,6 +358,7 @@
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
             animation: fadeInUp 1s ease-out;
             text-transform: uppercase;
+            font-family: var(--font-cinzel);
         }
 
         .slide-content p {
@@ -365,6 +366,7 @@
         margin-bottom: 2rem;
             text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
             animation: fadeInUp 1s ease-out 0.2s backwards;
+            font-family: var(--font-cinzel);
         }
 
         /* .slide-content button {
@@ -477,15 +479,17 @@
             text-shadow: none;
             padding-block: 4rem 1.5rem;
             text-transform: uppercase;
+            font-family: var(--font-cinzel);
         }
 
         .main-second-section .tagline {
             color: #6B3C2F;
             text-align: center;
             padding: 0 2rem;
-            font-size: 2rem;
+            font-size: 1.3rem;
             position: relative;
             text-shadow: none;
+            font-family: var(--font-cinzel);
         }
 
        .main-second-section  .cards{
@@ -546,7 +550,7 @@
 
         .card__title {
             margin: 0;
-            font-family: var(--font-alegreya);
+            font-family: var(--font-cinzel);
             font-size: 22px;
             line-height: 1.05;
             color: #3a2f2a;
@@ -929,6 +933,7 @@
             font-size: 1.1rem;
             margin-bottom: 2rem;
             line-height: 1.6;
+            font-family: var(--font-cinzel);
         }
 
         .products-hero-content .small-text {
@@ -993,7 +998,7 @@
     font-weight: 700;
     letter-spacing: 3px;
     margin-bottom: 2rem;
-    font-family: var(--font-poppins);
+    font-family: var(--font-cinzel);
     text-transform: uppercase;
 }
 
@@ -1002,7 +1007,7 @@
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 1.5rem;
-    font-family: var(--font-poppins);
+    font-family: var(--font-cinzel);
     text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -1018,7 +1023,7 @@
     font-size: 1.3rem;
     line-height: 1.8;
     margin-bottom: 3rem;
-    font-family: var(--font-poppins);
+    font-family: var(--font-cinzel);
     font-weight: 400;
 }
 
@@ -1053,14 +1058,14 @@
 .stat-number {
     font-size: 2.5rem;
     font-weight: 700;
-    font-family: var(--font-poppins);
+    font-family: var(--font-cinzel);
     line-height: 1;
 }
 
 .stat-label {
     font-size: 0.85rem;
     opacity: 0.9;
-    font-family: var(--font-poppins);
+    font-family: var(--font-cinzel);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -1082,7 +1087,7 @@
     font-weight: 700;
     border-radius: 50px;
     text-decoration: none;
-    font-family: var(--font-poppins);
+    font-family: var(--font-cinzel);
     transition: all 0.4s ease;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
@@ -1177,7 +1182,7 @@
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 2px;
-    font-family: var(--font-poppins);
+    font-family: var(--font-cinzel);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -1192,7 +1197,7 @@
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-bottom: 0.5rem;
-    font-family: var(--font-poppins);
+    font-family: var(--font-cinzel);
 }
 
 .product-title {
@@ -1201,7 +1206,7 @@
     color: #2c1810;
     margin-bottom: 0.5rem;
     line-height: 1.1;
-    font-family: var(--font-poppins);
+    font-family: var(--font-cinzel);
 }
 
 .product-tagline {
@@ -1209,6 +1214,7 @@
     color: #5a504b;
     margin-bottom: 2rem;
     font-style: italic;
+    font-family: var(--font-cinzel);
 }
 
 .product-specs {
@@ -1234,14 +1240,14 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    font-family: var(--font-poppins);
+    font-family: var(--font-cinzel);
 }
 
 .spec-value {
     font-size: 1rem;
     color: #2c1810;
     font-weight: 600;
-    font-family: var(--font-poppins);
+    font-family: var(--font-cinzel);
 }
 
 .product-description {
@@ -1252,6 +1258,7 @@
 .product-description p {
     font-size: 1.05rem;
     color: #3a2f2a;
+    font-family: var(--font-cinzel);
 }
 
 .product-cta {
@@ -1272,7 +1279,7 @@
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 8px 20px rgba(140, 75, 58, 0.3);
-    font-family: var(--font-poppins);
+    font-family: var(--font-cinzel);
     letter-spacing: 0.5px;
 }
 
@@ -1293,7 +1300,7 @@
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-family: var(--font-poppins);
+    font-family: var(--font-cinzel);
 }
 
 .btn-secondary:hover {
@@ -1334,28 +1341,49 @@
 
 .about-header {
     text-align: center;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
+}
+
+.section-divider {
+    width: 50%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #6B3C2F 20%, #8c4b3a 50%, #6B3C2F 80%, transparent);
+    margin: 2.5rem auto 0;
+    position: relative;
+}
+
+.section-divider::before {
+    content: '✦';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #F5DEB3;
+    color: #6B3C2F;
+    font-size: 0.9rem;
+    padding: 0.4rem 0.6rem;
+    border-radius: 50%;
 }
 
 .section-label {
-    /* display: inline-block; */
-    font-size: 2rem;
+    display: block;
+    font-size: 2.2rem;
     font-weight: 600;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     text-transform: uppercase;
     color: #6B3C2F;
-    /* margin-bottom: 1.5rem; */
-    font-family: var(--font-poppins);
+    margin-bottom: 1.5rem;
+    font-family: var(--font-cinzel);
 }
 
 .section-title {
-    font-size: 4rem;
-    font-weight: 300;
-    line-height: 1.1;
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 1.2;
     color: #4A3428;
     margin: 0;
-    font-family: var(--font-poppins);
-    letter-spacing: -1px;
+    font-family: var(--font-cinzel);
+    letter-spacing: 0.5px;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
     text-transform: uppercase;
 }
@@ -1378,7 +1406,7 @@
     color: #5C3D2E;
     margin-bottom: 2rem;
     font-weight: 400;
-    font-family: var(--font-poppins);
+    font-family: var(--font-cinzel);
 }
 
 .about-body {
@@ -1386,8 +1414,8 @@
     line-height: 1.8;
     color: #6B4423;
     margin-bottom: 1.5rem;
-    font-family: var(--font-poppins);
-    font-weight: 300;
+    font-family: var(--font-cinzel);
+    font-weight: 500;
 }
 
 .about-image {
@@ -1429,7 +1457,7 @@
     font-weight: 600;
     color: #6B3C2F;
     margin-bottom: 0.75rem;
-    font-family: var(--font-poppins);
+    font-family: var(--font-cinzel);
     letter-spacing: 0.5px;
 }
 
@@ -1437,7 +1465,7 @@
     font-size: 0.95rem;
     line-height: 1.6;
     color: #6B4423;
-    font-family: var(--font-poppins);
+    font-family: var(--font-cinzel);
     font-weight: 300;
 }
 
@@ -1449,7 +1477,7 @@
 
 .contact-section {
     background: linear-gradient(135deg, #6B3C2F 0%, #5C3D2E 50%, #4A3428 100%);
-    padding: 8rem 2rem;
+    padding: 6rem 2rem;
     position: relative;
 }
 
@@ -1507,7 +1535,7 @@
     line-height: 1.7;
     color: #FAEBD7;
     margin-top: 1.5rem;
-    font-family: var(--font-poppins);
+    font-family: var(--font-cinzel);
     font-weight: 300;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
@@ -1531,14 +1559,19 @@
     text-transform: uppercase;
     color: #F5DEB3;
     margin-bottom: 1rem;
-    font-family: var(--font-poppins);
+    font-family: var(--font-cinzel);
+}
+
+.info-block h3 i {
+    margin-right: 0.5rem;
+    font-size: 1rem;
 }
 
 .info-block p {
     font-size: 1rem;
     line-height: 1.8;
     color: #FAEBD7;
-    font-family: var(--font-poppins);
+    font-family: var(--font-cinzel);
     font-weight: 300;
 }
 
@@ -1567,7 +1600,7 @@
     padding-bottom: 2px;
     border-bottom: 1px solid transparent;
     transition: all 0.3s ease;
-    font-family: var(--font-poppins);
+    font-family: var(--font-cinzel);
 }
 
 .social-links a:hover {
@@ -2110,7 +2143,8 @@
         margin-bottom: 0.625rem;
         max-width: 80dvw;
     }
-
+ 
+    
     .slide-content p {
         font-size: 1.2rem;
         margin-bottom: 1.25rem;
