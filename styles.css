@@ -347,7 +347,7 @@
             text-align: center;
             color: white;
             max-width: 800px;
-            padding: 2rem;
+            padding: 3.5rem;
             position: relative;
             z-index: 2;
         }
@@ -1863,7 +1863,7 @@
     }
 
     .slide-content {
-        padding: 1.5rem;
+        padding: 3.5rem;
     }
 
     .slide-content h1 {
@@ -2135,7 +2135,7 @@
     }
 
     .slide-content {
-        padding: 1rem;
+        padding: 3.5rem;
     }
 
     .slide-content h1 {
